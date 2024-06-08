@@ -37,11 +37,12 @@
         echo $rsc3."<br>";
         echo $rsc4."<br>";
         echo $id_building."<br>";
-        if( !empty($id_building) ){
+        if( !empty($id_building) && $_POST['mode'] == 'up' ){
             $building->economyTransaction($_POST, $dataP, $planetId);
             $building->upgradeBuilding($_POST, $planetId);
-        }else{
-            // echo "problem form ?";
+        }elseif(!empty($id_building) && $_POST['mode'] == 'down'){
+            $building->economyRegretion($_POST, $dataP, $planetId);
+            $building->downgradeBuilding($_POST, $planetId);
         }
 
     }
