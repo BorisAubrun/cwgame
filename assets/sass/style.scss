@@ -1,0 +1,588 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.orbitron{
+    // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+ 
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal; 
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url('../images/tt.jpeg');
+    // background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(41, 41, 41);
+    font-family: "Roboto", sans-serif;
+    .navbar-default{
+        width: 100%;
+        max-width: 1200px;
+        background-color: rgb(41, 41, 41);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 20px 0 ;
+        margin: 0 auto;
+        margin-top: 50px;    
+        line-height: 30px;
+        border: solid 2px black;
+        .active{
+            color: rgb(155, 140, 7);
+        } 
+    }
+
+    .nav1{
+        line-height: 30px;
+    }
+
+    .nav2{
+        width: 100%;
+        max-width: 400px;
+        display: inline;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    .logo img{
+        width: 180px;
+        position: absolute;
+        left: 100px;
+    }
+    .planet a {
+        line-height: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+     .ressources{
+        width: 100%;
+        max-width: 1200px;
+        background-color:rgba(41, 41, 41, 0.91);
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        height: auto;
+        padding: 20px 0 ;
+        margin: 0 auto;
+        margin-top: 50px;
+        align-items: center;
+        border-top:solid 2px black;
+        border-left:solid 2px black;
+        border-right:solid 2px black;
+        .nbr-ressources{
+            width: 100%;
+            max-width: 400px;
+            display: inline;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-around;
+        }
+     }
+
+    .noEffect{
+        line-height: 20px;
+        img{
+            border:solid 3px black;
+        }
+        p{
+            text-align: center;
+        }
+
+    } 
+    .content{
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: center;
+        .aside{
+            width: 100%;
+            max-width: 180px;
+            background-color: rgb(41 41 41 / 91%);
+            border-left:solid 2px black;
+            .aside-list{ 
+                .aside-elem{
+                    margin: 15px 0;
+                    text-align: center;
+                    a{
+                        font-family: "Orbitron", sans-serif;
+                        font-optical-sizing: auto;
+                        font-weight: 400;
+                        font-style: normal;  
+                        font-size: 18px;
+                        display: block; 
+                        text-align: center; 
+                        border:solid 1px black;
+                        border-radius: 4px;
+                        padding: 7px 25px;
+                        width: 150px;
+                        margin: 0 auto;
+                        background-color: rgb(50, 50, 50);
+                        transition: all 0.3s ease;
+                        &:hover{
+                            background-color: rgb(41, 41, 41);
+                            transition: all 0.3s ease;
+                        }
+                    }
+                    .incapacited{
+                        color: white;
+                        cursor: not-allowed;
+                        background-color: rgb(162 0 0);
+                            &:hover{
+                            background-color: rgb(162 0 0);
+                        }
+                    }
+                }
+            }
+        }
+        .active{
+            color:rgb(201, 182, 12);
+        }
+        
+        .main{
+            width: 100%;
+            max-width: 950px; 
+            // margin-left: 50px;  
+            background-color: rgb(41, 41, 41);
+            padding:20px;
+            display: flex;
+            justify-content: space-between;
+            background-image: url(../images/pl1.jpg);
+            background-size: cover  ;
+            height: 400px;
+            padding:30px;
+            background-color: black;
+            border: solid 12px rgb(41, 41, 41);
+            height: 500px;
+            .view{
+                img{
+                    border:solid 2px rgb(155, 140, 7)
+                }
+                .pl{
+                    width: 300px; 
+                    height: 200px;
+                    background-image: url(../images/ps2.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    border:solid 2px rgb(155, 140, 7);
+                }
+            }
+            .stat{
+                color: aqua;
+                margin-top: 35%;
+                line-height: 25px;
+                width: 221px;
+                height: 128px;
+            }
+            .event{
+                margin-left: 50px;  
+                background-color: rgb(41, 41, 41);
+                padding:20px;
+                display: flex;
+                justify-content: space-between;
+                padding:30px;
+                background-color: black;
+                border: solid 12px rgb(41, 41, 41);
+                // .ev{
+
+                // }
+            }
+        }
+        .federation{
+            width: 100%;
+            max-width: 180px;
+            border-right:solid 2px black;
+            background-color: rgba(41, 41, 41, 0.91);
+            .fed{
+                padding: 15px;
+                color: white;
+                display: block;
+                text-align: center;
+                margin-bottom: 20px 5px;
+                transition: all 0.2s ease;
+                margin-right: 14px; 
+                &:hover{
+                    transition: all 0.2s ease;
+                    background-color: rgb(26, 18, 18);
+                }
+                img{
+                    width: 64px;
+                }
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .progressB{
+        width: 100%;
+        max-width: 1200px;
+        margin:0 auto;
+        height: 67px;
+        background-color: rgb(41 41 41 / 91%);
+
+        .flex{
+            display: flex;
+            width: 100%;
+            max-width: 820px;
+            margin: 0 auto;
+            background-color: rgb(13 12 12);
+            height: 70px;
+            // margin-left: 192px;
+            margin-bottom: 10px;
+            padding: 14px 0px;
+            .pg{
+                p{
+                    color: cyan;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .hidden {
+        visibility: hidden;
+    }
+    .form{
+
+        width: 100%;
+        max-width: 400px;
+        margin:0 auto;
+        padding: 20px 40px;
+        background-color: rgb(41, 41, 41);
+        color: white;
+        margin-top: 100px;
+
+        h2{
+            font-weight: 500;
+            font-size: 26px;
+        }
+    }
+    .lgg{
+        background-color: black;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .content-body{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: rgba(41, 41, 41, 0.91);
+
+        .list-grid{
+            width: 100%;
+            max-width: 824px;
+            margin:0 auto;
+            background-color: rgba(41, 41, 41);
+            padding-top: 20px;
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+            position: relative;
+            
+            .list-element{
+                position: relative;
+                
+                width: 180px;
+                height: 180px;
+                margin: 5px;
+                margin-bottom: 70px;
+                cursor: pointer;
+                .list-img{
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+                    max-width: 180px;
+                    height: 180px;
+                    margin: 0 auto;
+                    
+                }
+                .disabled{
+                    width: 180px;
+                    height: 180px;
+                    position: absolute;
+                    z-index: 1000;
+                    top: 1px;
+                    background-image: url(../images/ban.webp);
+                }
+                .ban{
+                    filter: grayscale(10);  
+                }
+                .rsc1{
+                    background-image: url(../images/building/rsc1.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .rsc2{
+                    background-image: url(../images/building/rsc2.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .rsc3{
+                    background-image: url(../images/building/rsc3.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .rsc4{
+                    background-image: url(../images/building/rsc4.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .cas{
+                    background-image: url(../images/building/caserne.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .usi{
+                    background-image: url(../images/building/usine.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .spa{
+                    background-image: url(../images/building/spatioport.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .lab{
+                    background-image: url(../images/building/laboratory.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .com1{
+                    background-image: url(../images/building/commerce.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .com2{
+                    background-image: url(../images/building/comm.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .sen{
+                    background-image: url(../images/building/senat.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .jed{
+                    background-image: url(../images/building/jedi.webp);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                .list-p{
+                    color: white;
+                    padding-top: 12px;
+ 
+                    span{
+                        color: rgb(201, 182, 12);
+                    }
+
+                    .levelZero{
+                        color: #48ff5c;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// formulaire js cta
+
+.filter{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0Px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.7607843137);
+    z-index: 5000;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+
+    .dataBuilding{
+        width: 100%;
+        max-width: 840px;
+        margin: 0 auto;
+        height: 500px;
+        background-color: rgb(41 41 41 / 97%);
+        margin-top: 300px;
+        position: relative;
+        z-index: 5001;
+        -webkit-box-shadow: 4px 3px 30px 12px black;
+        -o-box-shadow: 4px 3px 30px 12px black;
+        box-shadow: 4px 3px 30px 12px black;
+        .data-body{
+            width: 100%;
+            max-width: 840px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            .img{
+                background-image: url(../images/building/rsc1.webp);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+                height: 300px;
+                max-width: 300px;
+                background-size: cover;
+                border: 2px solid black
+            }
+            .text{
+                color: white;
+                width: 100%;
+                max-width: 400px;
+                margin: 0 auto;
+                margin-top: 50px;
+                .title{ 
+                    color: white;
+                    font-size: 26px;
+                }
+                .rsc-list{
+                    margin-top: 15px;
+                    display: flex;
+                    width: 100%;
+                    margin: 0 auto;
+                    max-width: 399px;
+                    justify-content: space-between;
+                    margin-top: 22px;
+                    height: 70px;
+                    line-height: 26px;
+                    font-size: 20px;
+                    .rsc-elem{
+                        text-align: center;
+                        img{
+                            border: 2px solid black;
+                        }
+                    }
+                }
+                .description{
+                    color: white; 
+                    margin-top: 15px;
+                    font-style: italic;
+                    color: rgb(202, 202, 202);
+                }
+                .level{
+                    margin-top: 15px;
+                    color: #48ff5c;
+                }
+            } 
+        }
+        .closeForm{
+            border: solid 2Px black;
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 40px;
+            height: 40px;
+            background-image: url(../images/close.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+        .data-footer{
+            display: flex;
+            position: absolute;
+            bottom: 40px;
+            right: 70px;
+            width: 100%;
+            max-width: 300px;
+            justify-content: space-between;
+
+            form input[type="submit"]{
+                width: 146px;
+                padding: 15px 14px;
+                font-size: 20px;
+                border-radius: 0px;
+                border: solid 1px black;
+                color: white;
+            }
+
+            .upgrade{
+                background-color: #259d25;
+            }
+
+            .downgrade{
+                background-color: #9d2525;
+            }
+
+            .disabled{
+                background-color: black;
+                color: grey!important;
+                cursor:no-drop;
+            }
+        }
+    }
+
+}
