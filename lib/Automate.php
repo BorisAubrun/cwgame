@@ -49,9 +49,9 @@ Class Automate{
             ':new_rsc4' => $new_rsc4,
             ':id_planet' => $id_planet
         ]) ){
-            echo json_encode(['status' => 'success', 'message' => 'Resources updated successfully.']);
+            echo json_encode(['status' => 'success', 'message' => 'Resources updated successfully GG.']);
         }else{
-            echo json_encode(['status' => 'error', 'message' => 'An unexpected error occurred: ']);
+            echo json_encode(['status' => 'error', 'message' => ' :( Fail : ']);
         }
 
     }

@@ -56,10 +56,10 @@ class Building {
 
                 }
             }else{
-                if (   ($val['rsc'] * $val['level'])  > $dataP['rsc'] 
-                || ($val['rsc2'] * $val['level']) > $dataP['rsc2'] 
-                || ($val['rsc3'] * $val['level']) > $dataP['rsc3'] 
-                || ($val['rsc4'] * $val['level']) > $dataP['rsc4'] ) {
+                if (   ($val['rsc'] * $val['level'] * $val['level'])  > $dataP['rsc'] 
+                || ($val['rsc2'] * $val['level'] * $val['level']) > $dataP['rsc2'] 
+                || ($val['rsc3'] * $val['level'] * $val['level']) > $dataP['rsc3'] 
+                || ($val['rsc4'] * $val['level'] * $val['level']) > $dataP['rsc4'] ) {
                     return true;
 
                 }else{
@@ -122,19 +122,19 @@ class Building {
                 echo '                <div class="rsc-list">';
                 echo '                   <div class="rsc-elem">';
                 echo '                        <img class="img-responsive" src="assets/images/rs1.jpg" width="80px" height="40px" alt="logo">';
-                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc']*$val['level']), $dataP['rsc']) . '">'. ($val['rsc']*$val['level']) .'</p>';
+                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc']*$val['level']*$val['level']), $dataP['rsc']) . '">'. ($val['rsc']*$val['level']*$val['level']) .'</p>';
                 echo '                    </div>';
                 echo '                    <div class="rsc-elem">';
                 echo '                        <img class="img-responsive" src="assets/images/rs2.jpg" width="80px" height="40px" alt="logo">';
-                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc2']*$val['level']), $dataP['rsc2']) . '">'. ($val['rsc2']*$val['level']) .'</p>';
+                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc2']*$val['level']*$val['level']), $dataP['rsc2']) . '">'. ($val['rsc2']*$val['level']*$val['level']) .'</p>';
                 echo '                    </div>';
                 echo '                    <div class="rsc-elem">';
                 echo '                        <img class="img-responsive" src="assets/images/rs3.avif" width="80px" height="40px" alt="logo">';
-                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc3']*$val['level']), $dataP['rsc3']) . '">'. ($val['rsc3']*$val['level']) .'</p>';
+                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc3']*$val['level']*$val['level']), $dataP['rsc3']) . '">'. ($val['rsc3']*$val['level']*$val['level']) .'</p>';
                 echo '                    </div>';
                 echo '                    <div class="rsc-elem">';
                 echo '                        <img class="img-responsive" src="assets/images/rs4.webp" width="80px" height="40px" alt="logo">';
-                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc4']*$val['level']), $dataP['rsc4']) . '">'. ($val['rsc4']*$val['level']) .'</p>';
+                echo '                        <p class="nbr-elements" style="' . checkRsc(($val['rsc4']*$val['level']*$val['level']), $dataP['rsc4']) . '">'. ($val['rsc4']*$val['level']*$val['level']) .'</p>';
                 echo '                    </div>';
                 echo '                </div>';
                 echo '                <p class="description">Améliorer ce bâtiment pour augmenter ses capacités de collecte, de construction ou d\'amélioration.</p>';
@@ -145,10 +145,10 @@ class Building {
                 echo '            <form method="post">';
                 echo '                <input type="hidden" name="id_buildng" value="' . $val['id_building'] . '">';
                 echo '                <input type="hidden" name="mode" value="up">';
-                echo '                <input type="hidden" name="rsc1" value="'. ($val['rsc']*$val['level']) .'">';
-                echo '                <input type="hidden" name="rsc2" value="'. ($val['rsc2']*$val['level']) .'">';
-                echo '                <input type="hidden" name="rsc3" value="'. ($val['rsc3']*$val['level']).'">';
-                echo '                <input type="hidden" name="rsc4" value="'. ($val['rsc4']*$val['level']).'">';
+                echo '                <input type="hidden" name="rsc1" value="'. ($val['rsc']*$val['level']*$val['level']) .'">';
+                echo '                <input type="hidden" name="rsc2" value="'. ($val['rsc2']*$val['level']*$val['level']) .'">';
+                echo '                <input type="hidden" name="rsc3" value="'. ($val['rsc3']*$val['level']*$val['level']).'">';
+                echo '                <input type="hidden" name="rsc4" value="'. ($val['rsc4']*$val['level']*$val['level']).'">';
                
                 echo '                <input type="hidden" name="level" value="' . ($lvl) . '">';
                

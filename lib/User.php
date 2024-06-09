@@ -29,8 +29,8 @@ class User
         
         $password = password_hash($password, PASSWORD_DEFAULT);
         $insertUser = $this->db->prepare("INSERT INTO `user` (`email`, `password`, `date`) VALUES (:email, :password, :date)");
-        $insertUser->bindParam(':email', $email);
-        $insertUser->bindParam(':password', $password); 
+        $insertUser->bindParam(':email', $email, PDO::PARAM_STR);
+        $insertUser->bindParam(':password', $password, PDO::PARAM_STR); 
         $insertUser->bindParam(':date', $date); 
 
         if ($insertUser->execute()) {
