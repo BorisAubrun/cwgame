@@ -55,7 +55,7 @@
             <input type="password" class="form-control" id="exampleInputPassword2" name="password1">
         </div>
         <div class="mb-3">
-            <label for="exampleInputPassword2" class="form-label">Password</label>
+            <label for="exampleInputPassword2" class="form-label">Repeat Password</label>
             <input type="password" class="form-control" id="exampleInputPassword2" name="password2">
         </div>
         <div class="mb-3 form-check">

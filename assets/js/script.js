@@ -19,6 +19,9 @@ $(document).ready(function() {
             }
         });
     }
+    function formatNumber(num) {
+        return num.toLocaleString('de-DE'); // Utilisation de 'de-DE' pour le format allemand (10.000)
+    }
 
     function fetchLatestResources() {
         $.ajax({

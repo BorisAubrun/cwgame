@@ -72,7 +72,7 @@ foreach ($structures as $key => $val){
             <a href="#" class="link <?php echo $communication; ?>">Galaxy</a>
         </li>
         <li class="aside-elem">
-            <a href="#" class="link <?php echo $incapacited; ?>">Faction</a>
+            <a href="#" class="link <?php echo $senat; ?>">Faction</a>
         </li>
     </ul>
 </div>

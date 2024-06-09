@@ -12,13 +12,15 @@
     if(!empty(basename($_SERVER['REQUEST_URI']))){
         $page = basename($_SERVER['REQUEST_URI']);
         if($page == "register.php"){
-            echo "<style> body{ background-image: url(assets/images/login.jpg); } </style>";
+            echo "<style> body{ background-image: url(assets/images/login.jpg);    background-repeat: no-repeat;
+                background-size: cover; } </style>";
         }
     }
     if(!empty(basename($_SERVER['REQUEST_URI']))){
         $page = basename($_SERVER['REQUEST_URI']);
         if($page == "login.php"){
-            echo "<style> body{ background-image: url(assets/images/login.jpg); } </style>";
+            echo "<style> body{ background-image: url(assets/images/login.jpg);    background-repeat: no-repeat;
+                background-size: cover; } </style>";
         }
     }
     if(!empty(basename($_SERVER['REQUEST_URI']))){
