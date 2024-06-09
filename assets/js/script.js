@@ -1,4 +1,43 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() { 
+
+    function refreshResources() {
+        $.ajax({
+            url: 'ajax/refresh_rsc.php',
+            method: 'GET',  // Using GET instead of POST
+            dataType: 'json',
+            success: function(response) {
+                if (response.status === 'success') {
+                    console.log(response.message);
+                    fetchLatestResources(); // Fetch the latest resource values
+                } else {
+                    console.error(response.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error('refresh_rsc error:', error);
+                console.error('responseText:', xhr.responseText);
+            }
+        });
+    }
+
+    function fetchLatestResources() {
+        $.ajax({
+            url: 'ajax/get_rsc.php', // Endpoint to fetch the latest resource values
+            method: 'GET',  // Using GET instead of POST
+            dataType: 'json',
+            success: function(data) {
+                $('.rsc').text(data.rsc);
+                $('.rsc2').text(data.rsc2);
+                $('.rsc3').text(data.rsc3);
+                $('.rsc4').text(data.rsc4);
+            }
+        });
+    }
+
+    // Update resources every second
+    setInterval(refreshResources, 1000);
+}); 
+    document.addEventListener("DOMContentLoaded", function() {
     const paragraphs = document.querySelectorAll(".stat p");
     const speed = 10; // Speed in milliseconds
     let paraIndex = 0;
@@ -58,5 +97,5 @@ $(document).ready(function() {
             $('.filter').hide();
         }
     });
-});
- 
+}); 
+

@@ -17,8 +17,8 @@
     $building = new Building($db);
     $structures = $building->getBuilding($planetId);
 
- 
     $dataP = $dataPlanets[0];
+ 
 
     // echo "<div style='color:black;background-color:white;'>";
     // echo "<pre>";

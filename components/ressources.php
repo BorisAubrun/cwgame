@@ -8,19 +8,19 @@
     <div class="nbr-ressources">
         <a href="#" class="noEffect">
             <img class="img-responsive" src="assets/images/rs1.jpg" width="80px" height="40px" alt="logo">
-            <p class="nbr-elements"><?php echo $dataP['rsc']; ?></p>
+            <p class="nbr-elements rsc"><?php echo $dataP['rsc']; ?></p>
         </a>
         <a href="#" class="noEffect">
             <img class="img-responsive" src="assets/images/rs2.jpg" width="80px" height="40px" alt="logo">
-            <p class="nbr-elements"><?php echo $dataP['rsc2']; ?></p>
+            <p class="nbr-elements rsc2"><?php echo $dataP['rsc2']; ?></p>
         </a>
         <a href="#" class="noEffect">
             <img class="img-responsive" src="assets/images/rs3.avif" width="80px" height="40px" alt="logo">
-            <p class="nbr-elements"><?php echo $dataP['rsc3']; ?></p>
+            <p class="nbr-elements rsc3"><?php echo $dataP['rsc3']; ?></p>
         </a>
         <a href="#" class="noEffect">
             <img class="img-responsive" src="assets/images/rs4.webp" width="80px" height="40px" alt="logo">
-            <p class="nbr-elements"><?php echo $dataP['rsc4']; ?></p>
+            <p class="nbr-elements rsc4"><?php echo $dataP['rsc4']; ?></p>
         </a>
     </div>
 </div>

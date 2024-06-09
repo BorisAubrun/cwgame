@@ -150,7 +150,7 @@ class Building {
                 echo '                <input type="hidden" name="rsc3" value="'. ($val['rsc3']*$val['level']).'">';
                 echo '                <input type="hidden" name="rsc4" value="'. ($val['rsc4']*$val['level']).'">';
                
-                echo '                <input type="hidden" name="level" value="' . ($val['level']) . '">';
+                echo '                <input type="hidden" name="level" value="' . ($lvl) . '">';
                
                
                 if ( rscLevel($val, $dataP) ){
@@ -171,7 +171,7 @@ class Building {
                 echo '                <input type="hidden" name="rsc2" value="'. ($val['rsc2']*$val['level']) .'">';
                 echo '                <input type="hidden" name="rsc3" value="'. ($val['rsc3']*$val['level']) .'">';
                 echo '                <input type="hidden" name="rsc4" value="'. ($val['rsc4']*$val['level']) .'">';
-                echo '                <input type="hidden" name="level" value="' . $val['level'] . '">';
+                echo '                <input type="hidden" name="level" value="' . $lvl . '">';
 
                 if( $val['level'] > 1){
                 echo '                <input type="submit" class="downgrade" value="Régression" name="submitDOWN">';
@@ -266,6 +266,7 @@ class Building {
             // exit;
         } 
     } 
+    
  
 }
 
