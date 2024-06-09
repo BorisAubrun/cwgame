@@ -8,7 +8,7 @@
         </ul>
         <ul class="nav nav2 navbar-nav navbar">
             <li class="item-list">
-                <a href="highscore.php" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "highscore.php"){echo "active";} ?>">Highscore(XXX)</a>
+                <a href="#" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "highscore.php"){echo "active";} ?>">Highscore(XXX)</a>
             </li>
             <?php if( empty($_SESSION)){ ?>
             <li class="item-list">
@@ -23,13 +23,13 @@
             </li>
                 <?php }  ?>
             <li class="item-list">
-                <a href="support.php" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "support.php"){echo "active";} ?>">Support</a>
+                <a href="#" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "support.php"){echo "active";} ?>">Support</a>
             </li>
             <li class="item-list">
-                <a href="option.php" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "option.php"){echo "active";} ?>">Option</a>
+                <a href="#" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "option.php"){echo "active";} ?>">Option</a>
             </li>
             <li class="item-list">
-                <a href="search.php" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "search.php"){echo "active";} ?>">Search</a>
+                <a href="#" class="link <?php if(basename($_SERVER['REQUEST_URI']) == "search.php"){echo "active";} ?>">Search</a>
             </li>
         </ul>
     </nav>
